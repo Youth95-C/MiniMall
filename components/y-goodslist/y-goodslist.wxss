@@ -1,0 +1,59 @@
+/* components/y-goodsList/y-goodsList.wxss */
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10rpx 0;
+  background-color: #fff;
+}
+.goods-item {
+  margin-top:16rpx;
+  width: 48%;
+  padding-bottom: 80rpx;
+  overflow: hidden;
+  position: relative;
+}
+.goods-item image {
+  width: 100%;
+  border-radius: 10rpx;
+}
+.goods-info {
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.goods-info .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 6rpx;
+}
+.goods-info .price {
+  color: #ff5777;
+  margin-right: 40rpx;
+}
+
+.goods-info .collect {
+  position: relative;
+}
+.goods-info .icon{
+  width:30rpx;
+  height:30rpx;
+  margin-right:4rpx;
+  position:relative;
+  top:4rpx;
+}
+/*wxss中不能引用本地图片，只能引用网络图片*/
+/* .goods-info .collect::before {
+  content: "";
+  position: absolute;
+  left: -30rpx;
+  top: -2rpx;
+  width: 28rpx;
+  height: 28rpx;
+  background: url("../../assets/common/favor.png") 0 0/28rpx 28rpx;
+} */

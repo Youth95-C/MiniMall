@@ -1,0 +1,16 @@
+<!--轮播图-->
+<y-swiper banners="{{banners}}" />
+<!--推荐-->
+<y-recommend recommends="{{recommends}}" bind:imageLoad="handleImageLoad"/>
+<!--本周流行-->
+<view class="popular">
+  <image src="/assets/home/popular_bg.jpg" mode="widthFix"/>
+</view>
+<!--tab-control-->
+<y-tab-control titles="{{titles}}" bind:tabClick="handleTabClick" class="{{isTabFixed?'fixed':''}}" id="tab-control"/>
+<y-tab-control titles="{{titles}}" bind:tabClick="handleTabClick" wx:if="{{isTabFixed}}"/>
+<!--商品列表-->
+<y-goodslist goods="{{goods[currentType].list}}" />
+<!--回到顶部-->
+<!--hidden:hidden属性对于自定义组件是无效的-->
+<y-backtop wx:if="{{showBackTop}}" />

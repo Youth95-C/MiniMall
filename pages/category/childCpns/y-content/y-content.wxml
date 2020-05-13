@@ -1,0 +1,11 @@
+<!--pages/category/y-content/y-content.wxml-->
+<scroll-view class="content" scroll-y>
+	<view class="subcategories">
+		<view class="subcategories-item" wx:for="{{subcategories}}" wx:key="index">
+			<image src="{{item.image}}" mode='widthFix' />
+			<view class="title">{{item.title}}</view>
+		</view>
+
+	</view>
+<y-goodslist  goods="{{categoryDetail}}" />
+</scroll-view>

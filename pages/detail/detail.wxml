@@ -1,0 +1,11 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="detail" scroll-y>
+<y-swiper banners="{{topImages}}"/>
+<y-base-info baseInfo="{{baseInfo}}"/>
+<y-shop-info shopInfo="{{shopInfo}}"/>
+<y-detail-info detailInfo="{{detailInfo}}"/>
+<y-params-info  paramInfo="{{paramInfo}}"/>
+  <y-comment-info commentInfo="{{commentInfo}}"/>
+  <y-recommend-info  recommends="{{recommends}}"/>
+</scroll-view>
+<y-bottom-bar bind:addcart="onAddCart"/>
